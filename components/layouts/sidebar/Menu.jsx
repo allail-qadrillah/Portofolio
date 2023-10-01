@@ -1,4 +1,4 @@
-import MenuItem from "../layouts/sidebar/MenuItem"
+import MenuItem from "./MenuItem"
 
 function Menu({ title, list }) {
 

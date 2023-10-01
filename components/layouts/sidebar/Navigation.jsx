@@ -1,6 +1,6 @@
 import { MENU_ITEMS, SOCIAL_MEDIA } from "@/constant/menu"
 
-import Menu from "@/components/elements/Menu"
+import Menu from "@/components/layouts/sidebar/Menu"
 import SocialMedia from "@/components/elements/SocialMedia"
 import Breakline from "@/components/elements/Breakline"
 

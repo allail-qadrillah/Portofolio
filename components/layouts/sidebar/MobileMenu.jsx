@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-import { FC } from "react"
 
 import Breakline from "@/components/elements/Breakline"
 import Navigation from "./Navigation"
