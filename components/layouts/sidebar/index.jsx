@@ -8,6 +8,7 @@ function Sidebar() {
       <nav>
         <Breakline/>
         <Navigation/>
+        <Breakline/>
         
       </nav>
     </div>

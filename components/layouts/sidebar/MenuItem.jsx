@@ -55,7 +55,10 @@ function MenuItem({ title, href, icon, onClick, className = '', children }) {
   return isHashLink ? (
     <div className="cursor-pointer">{itemComponent()}</div>
   ) : (
-      <Link aria-label={title} href={href} tabIndex={0} target={isExternalUrl ? '_blank' : ''}>
+      <Link aria-label={title} 
+      href={href} tabIndex={0} 
+      target={isExternalUrl ? '_blank' : ''} 
+      onClick={handleClick}>
         {itemComponent()}
       </Link>
   )
