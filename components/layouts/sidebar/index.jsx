@@ -1,13 +1,16 @@
 import Breakline from "@/components/elements/Breakline"
+import Copyright from "@/components/elements/Copyright"
 import Navigation from "./Navigation"
 import Profile from "./Profile"
 function Sidebar() {
   return (
     <div className='sticky transition-all duration-300 top-0 z-10 flex flex-col lg:py-8'>
       <Profile/>
-      <nav>
+      <nav className="hidden md:block">
         <Breakline/>
-        <Navigation/>        
+        <Navigation/>  
+        <Breakline />
+        <Copyright />      
       </nav>
     </div>
   )

@@ -1,7 +1,6 @@
 import MenuItem from "../layouts/sidebar/MenuItem"
 
 function Menu({ title, list }) {
-  console.log(list)
 
   return (
     <div className="flex flex-col space-y-1 lg:p-0">
