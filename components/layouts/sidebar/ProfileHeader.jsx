@@ -20,7 +20,7 @@ function ProfileHeader({ expandMenu, imageSize }) {
         rounded="rounded-full"
         className="lg:hover:scale-105"
       />
-      <div className="bg-blue-500 flex gap-2 items-center mt-1 lg:mt-4">
+      <div className="flex gap-2 items-center mt-1 lg:mt-4">
         <Link href='/' passHref>
           <h2 className='flex-grow text-lg lg:text-xl font-sora font-medium'>M Al Lail Qadrillah</h2>
         </Link>
