@@ -14,8 +14,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}
+    <html lang="en" suppressHydrationWarning={true}>
+      <body className={inter.className}>
         <NextTopLoader
           color="#05b6d3"
           initialPosition={0.08}

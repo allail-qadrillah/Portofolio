@@ -1,8 +1,13 @@
-import Image from 'next/image'
+import Container from "@/components/elements/Container"
+import Home from "@/modules/home"
 
-export default function Home() {
+export default async function HomePage() {
   return (
-    <div className='bg-gray-200'>
-    </div>
+  <>
+    <Container data-aos="fade-up">
+      <Home />
+    </Container>
+    Halo
+  </>
   )
 }

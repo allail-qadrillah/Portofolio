@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-import clsxm from "@/libs/clsxm"
+import clsxm from "@/lib/clsxm"
 
 import Tooltips from "./Tooltip"
 
