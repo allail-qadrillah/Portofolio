@@ -7,9 +7,7 @@ function Sidebar() {
       <Profile/>
       <nav>
         <Breakline/>
-        <Navigation/>
-        <Breakline/>
-        
+        <Navigation/>        
       </nav>
     </div>
   )
