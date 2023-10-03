@@ -22,7 +22,7 @@ function ProfileHeader({ expandMenu, imageSize }) {
       />
       <div className="flex gap-2 items-center mt-1 lg:mt-4">
         <Link href='/' passHref>
-          <h2 className='flex-grow text-lg lg:text-xl font-sora font-medium'>M Al Lail Qadrillah</h2>
+          <h2 className='flex-grow text-lg lg:text-xl font-medium'>M Al Lail Qadrillah</h2>
         </Link>
 
         <Tooltips title="Verified">
@@ -33,7 +33,7 @@ function ProfileHeader({ expandMenu, imageSize }) {
       <Link
         href={LINKTREE_URL}
         target='_blank'
-        className="hidden lg:flex text-sm font-sora text-neutral-600 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-400 transition-all duration-300"
+        className="hidden lg:flex text-sm  text-neutral-600 hover:text-neutral-700 dark:text-neutral-500 dark:hover:text-neutral-400 transition-all duration-300"
       >
         @mallailqadrillah
       </Link>
