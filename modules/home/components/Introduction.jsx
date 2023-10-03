@@ -20,8 +20,8 @@ export default function Introduction() {
           <li>🔹Based in Banda Aceh <span className="ml-1">🇮🇩</span></li>
         </ul>
         <p className="mt-4 leadinf-[1.8] md:leading-loose text-neutral-800 dark:text-neutral-300">
-          Passionate and seasoned Software Engineer with a strong focus on frontend development. Proficient in
-          TypeScript and well-versed in all aspects of web technologies. Collaborative team player dedicated to
+          Passionate and seasoned Software Engineer with a strong focus on Backend development. Proficient in
+          Python and JavaScript in all aspects of web technologies. Collaborative team player dedicated to
           delivering efficient, scalable, and visually appealing web applications.
         </p>
       </div>
