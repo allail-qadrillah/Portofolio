@@ -7,12 +7,6 @@ export default async function HomePage() {
     <>
       <Container data-aos="fade-up">
       <Home />
-
-        {/* {css text and wave hand animation works when used in this component} */}
-        {/* <div className='flex gap-2 font-bold text-4xl'>
-          <h1> Hi, I&apos;m Alil</h1>
-          <div className="ml-1 animate-waving-hand">👋</div>
-        </div> */}
       </Container>
     </>
   )
