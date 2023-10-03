@@ -7,7 +7,6 @@ export default async function HomePage() {
     <Container data-aos="fade-up">
       <Home />
     </Container>
-    Halo
   </>
   )
 }

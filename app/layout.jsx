@@ -3,9 +3,13 @@ import './globals.css'
 import ThemeProviderContext from "@/context/theme"
 import NextTopLoader from "nextjs-toploader"
 import Layouts from "@/components/layouts"
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['greek'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Next.js',
@@ -15,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <NextTopLoader
           color="#05b6d3"
           initialPosition={0.08}

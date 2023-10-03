@@ -5,8 +5,6 @@ export default function Home() {
     <>
       <Introduction />
       <Breakline />
-      <Introduction />
-      <Breakline />
     </>
   )
 }
