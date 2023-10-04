@@ -39,6 +39,14 @@ export const MENU_ITEMS = [
     eventName: 'Pages: Projects'
   },
   {
+    title: 'About',
+    href: '/about',
+    icon: <ProfileIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: About'
+  },
+  {
     title: 'Blog',
     href: '/blog',
     icon: <BlogIcon size={iconSize} />,
@@ -61,14 +69,6 @@ export const MENU_ITEMS = [
     isShow: true,
     isExternal: false,
     eventName: 'Pages: Roadmap'
-  },
-  {
-    title: 'About',
-    href: '/about',
-    icon: <ProfileIcon size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: About'
   },
   {
     title: 'Contact',
