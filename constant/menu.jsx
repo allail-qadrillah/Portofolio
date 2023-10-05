@@ -31,20 +31,20 @@ export const MENU_ITEMS = [
     eventName: 'Pages: Home'
   },
   {
-    title: 'Projects',
-    href: '/projects',
-    icon: <ProjectIcon size={iconSize} />,
-    isShow: true,
-    isExternal: false,
-    eventName: 'Pages: Projects'
-  },
-  {
     title: 'About',
     href: '/about',
     icon: <ProfileIcon size={iconSize} />,
     isShow: true,
     isExternal: false,
     eventName: 'Pages: About'
+  },
+  {
+    title: 'Projects',
+    href: '/projects',
+    icon: <ProjectIcon size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: 'Pages: Projects'
   },
   {
     title: 'Blog',
@@ -66,7 +66,7 @@ export const MENU_ITEMS = [
     title: 'Roadmap',
     href: '/roadmap?tribe=frontend-developer',
     icon: <LuWorkflow size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: false,
     eventName: 'Pages: Roadmap'
   },
@@ -91,7 +91,7 @@ export const MENU_ITEMS = [
 export const SOCIAL_MEDIA = [
   {
     title: 'Github',
-    href: 'https://github.com/Bayusetiawan45',
+    href: 'https://github.com/allail-qadrillah',
     icon: <GithubIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -99,7 +99,7 @@ export const SOCIAL_MEDIA = [
   },
   {
     title: 'Linkedin',
-    href: 'https://www.linkedin.com/in/bayu-setiawan99/',
+    href: 'linkedin.com/in/m-al-lail-qadrillah',
     icon: <LinkedinIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -115,7 +115,7 @@ export const SOCIAL_MEDIA = [
   },
   {
     title: 'Instagram',
-    href: 'https://instagram.com/bayustr__',
+    href: 'https://instagram.com/allailqadrillah_',
     icon: <InstagramIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
@@ -123,31 +123,31 @@ export const SOCIAL_MEDIA = [
   },
   {
     title: 'Threads',
-    href: '',
+    href: 'https://threads.net/@allailqadrillah_',
     icon: <ThreadsIcon size={iconSize} />,
-    isShow: false,
+    isShow: true,
     isExternal: true,
     eventName: 'Social: Threads'
   },
   {
     title: 'Discord',
-    href: 'https://discord.gg/76UFeGdXy6',
+    href: '',
     icon: <DiscordIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: true,
     eventName: 'Social: Discord'
   },
   {
     title: 'Youtube',
-    href: 'https://www.youtube.com/@codebayu',
+    href: '',
     icon: <YoutubeIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: true,
     eventName: 'Social: Youtube'
   },
   {
     title: 'TikTok',
-    href: 'https://www.tiktok.com/@codebayu.com',
+    href: 'https://tiktok.com/@allailqadrillah_',
     icon: <TiktokIcon size={iconSize} />,
     isShow: true,
     isExternal: true,
