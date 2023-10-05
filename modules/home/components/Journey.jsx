@@ -12,7 +12,7 @@ import { TimeLine } from '@/modules/home/components/TimeLine';
 export default function Journey() {
   return (
     <div className="space-y-2">
-      <SectionHeading className='dark:text-white' title='Journey' icon={<CareerIcon className='mr-1' />} />
+      <SectionHeading title='Journey' icon={<CareerIcon className='mr-1' />} />
       <SectionSubHeading>
         <p className="dark:text-neutral-400">My Journey</p>
         <Link
