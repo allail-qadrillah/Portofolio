@@ -3,7 +3,7 @@ import Image from '@/components/elements/Image';
 import { PROFILE_URL, LINKTREE_URL } from '@/constant';
 import Link from 'next/link';
 import { MdVerified as VerifiedIcon } from 'react-icons/md';
-import Tooltips from '@/components/elements/ToolTip';
+import ToolTip from '@/components/elements/ToolTip';
 function ProfileHeader({ expandMenu, imageSize }) {
   return (
     <div
@@ -25,9 +25,9 @@ function ProfileHeader({ expandMenu, imageSize }) {
           <h2 className='flex-grow text-lg lg:text-xl font-medium'>M Al Lail Qadrillah</h2>
         </Link>
 
-        <Tooltips title="Verified">
+        <ToolTip title="Verified">
           <VerifiedIcon size={20} className='text-blue-400' />
-        </Tooltips>
+        </ToolTip>
       </div>
 
       <Link
