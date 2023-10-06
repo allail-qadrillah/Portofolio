@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import ToolTips from "@/components/elements/ToolTip"
+import ToolTips from "@/components/elements/Tooltip"
 import { STACKS } from "@/constant/stack"
 import {
   AiFillPushpin as Pinned,
