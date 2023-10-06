@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import ToolTip from "@/components/elements/ToolTip"
+import ToolTips from "@/components/elements/ToolTip"
 import { STACKS } from "@/constant/stack"
 import {
   AiFillPushpin as Pinned,
@@ -41,7 +41,7 @@ export default function ProjectCard({
           <div className="flex flex-wrap items-center gap-3">
             {stack?.map((stack, index) => (
               <div key={index} className="w-6">
-                <ToolTip title={stack}>{STACKS[stack]}</ToolTip>
+                <ToolTips title={stack}>{STACKS[stack]}</ToolTips>
               </div>
             ))}
           </div>

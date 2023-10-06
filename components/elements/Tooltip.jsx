@@ -5,7 +5,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-const ToolTip = ({ title, children}) => {
+const ToolTips = ({ title, children}) => {
   return (
     <TooltipProvider>
       <Tooltip>
@@ -18,4 +18,4 @@ const ToolTip = ({ title, children}) => {
   )
 }
 
-export default ToolTip
+export default ToolTips

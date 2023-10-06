@@ -2,8 +2,7 @@ import Link from "next/link"
 
 import clsxm from "@/lib/clsxm"
 
-import ToolTip from "./ToolTip"
-
+import ToolTips from "./ToolTip"
 function SocialMedia({ items, isMePage }) {
   const dataAos = isMePage ? 'zoom-in-down' : ''
   return (
@@ -20,11 +19,11 @@ function SocialMedia({ items, isMePage }) {
             data_umami-event={item?.eventName}
             aria-label={item?.title}
           >
-            <ToolTip title={item?.title}>
+            <ToolTips title={item?.title}>
               <div>
                 {item?.icon}
               </div>
-            </ToolTip>
+            </ToolTips>
           </Link>
         ))}
       </div>
