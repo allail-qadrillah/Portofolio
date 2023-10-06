@@ -2,7 +2,7 @@ import Link from "next/link"
 
 import clsxm from "@/lib/clsxm"
 
-import Tooltips from "./Tooltip"
+import Tooltips from "./ToolTip"
 
 function SocialMedia({ items, isMePage }) {
   const dataAos = isMePage ? 'zoom-in-down' : ''
