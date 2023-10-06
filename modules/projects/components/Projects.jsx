@@ -14,6 +14,7 @@ import {
   CommandGroup,
   CommandInput,
   CommandItem,
+  CommandList,
 } from "@/components/ui/command"
 import {
   Popover,
@@ -41,7 +42,7 @@ export default function Projects() {
   const [open, setOpen] = useState(false)
   const [value, setValue] = useState("")
   const [Projects, setProjects] = useState([])
-  const Stacks = [...new Set(dummy_project.flatMap(project => project.stack))] 
+  const Stacks = [...new Set(dummy_project.flatMap(project => project.stack))]
 
   // setProject(dummy_project)
   useEffect(() => {
@@ -58,7 +59,7 @@ export default function Projects() {
       // second
     }
   }, [value])
-  
+
   return (
     <>
       <div className="flex items-center space-x-4">
