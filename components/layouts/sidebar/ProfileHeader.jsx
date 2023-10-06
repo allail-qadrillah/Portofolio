@@ -3,7 +3,7 @@ import Image from '@/components/elements/Image';
 import { PROFILE_URL, LINKTREE_URL } from '@/constant';
 import Link from 'next/link';
 import { MdVerified as VerifiedIcon } from 'react-icons/md';
-import Tooltips from '@/components/elements/Tooltip';
+import Tooltips from '@/components/elements/ToolTip';
 function ProfileHeader({ expandMenu, imageSize }) {
   return (
     <div
