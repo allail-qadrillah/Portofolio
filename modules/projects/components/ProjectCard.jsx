@@ -14,7 +14,7 @@ export default function ProjectCard({
   title, slug, description, image, stack, is_featured, is_public }) {
 
   return (
-    <Link href={`/project/${slug}`}>
+    <Link href={`/projects/${slug}`}>
       <Card className="relative border dark:bg-neutral-800 border-neutral-200 dark:border-neutral-800 lg:hover:scale-[102%]">
         {is_featured && (
           <div className="absolute top-0 right-0 bg-emerald-300 text-emerald-950 text-[13px]  py-1 px-2 rounded-tr-xl rounded-bl-lg z-[2]">

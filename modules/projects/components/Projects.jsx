@@ -32,7 +32,7 @@ const dummy_project = [
     stack: ['Python'], is_featured: true, is_public: true
   },
   {
-    title: "projek 2", slug: 'bla bla', description: "on another life",
+    title: "projek 2", slug: 'bla-bla', description: "on another life",
     image: "https://res.cloudinary.com/dmt5jx75a/image/upload/v1696577638/Web%20Portofolio/h2xbe6bjouaeuumtsswt.jpg",
     stack: ['JavaScript', 'Next.js', 'Python'], is_featured: false, is_public: false
   },
