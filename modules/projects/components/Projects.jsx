@@ -21,36 +21,20 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 
-
-
-
-
-const dummy_project = [
-  {
-    title: "projek 1", slug: 'bla', description: "another life",
-    image: "https://res.cloudinary.com/dmt5jx75a/image/upload/v1696577638/Web%20Portofolio/h2xbe6bjouaeuumtsswt.jpg",
-    stack: ['Python'], is_featured: true, is_public: true
-  },
-  {
-    title: "projek 2", slug: 'bla-bla', description: "on another life",
-    image: "https://res.cloudinary.com/dmt5jx75a/image/upload/v1696577638/Web%20Portofolio/h2xbe6bjouaeuumtsswt.jpg",
-    stack: ['JavaScript', 'Next.js', 'Python'], is_featured: false, is_public: false
-  },
-]
-export default function Projects() {
+export default function Projects({ project_item }) {
   const [open, setOpen] = useState(false)
   const [value, setValue] = useState("")
   const [Projects, setProjects] = useState([])
-  const Stacks = [...new Set(dummy_project.flatMap(project => project.stack))]
+  const Stacks = [...new Set(project_item.flatMap(project => project.stack))]
 
-  // setProject(dummy_project)
+  // setProject(project_item)
   useEffect(() => {
     // get stack from project
     if (value === "") {
-      setProjects(dummy_project)
+      setProjects(project_item)
     } else {
       setProjects(
-        dummy_project.filter(project => project.stack.includes(value))
+        project_item.filter(project => project.stack.includes(value))
       )
     }
 

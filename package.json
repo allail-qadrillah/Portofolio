@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emotion/styled": "^11.11.0",
+    "@notionhq/client": "^2.2.13",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-popover": "^1.0.7",
     "@radix-ui/react-slot": "^1.0.2",
@@ -23,6 +24,7 @@
     "next": "latest",
     "next-themes": "^0.2.1",
     "nextjs-toploader": "^1.4.2",
+    "node-fetch": "^3.3.2",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",
