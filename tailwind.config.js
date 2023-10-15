@@ -1,5 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  safelist: [
+    {
+      pattern: /bg-(purple|yellow|pink|red|blue|green|orange|brown|gray|default)-200/,
+    }
+  ],
   darkMode: "class",
   content: [
     './pages/**/*.{js,jsx}',
@@ -14,6 +19,12 @@ module.exports = {
     },
     extend: {
       colors: {
+        default: {
+          200: '#F1F0EF',
+        },
+        brown: {
+          200: '#EEE0DA',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

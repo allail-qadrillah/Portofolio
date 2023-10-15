@@ -15,6 +15,7 @@ export default function ProjectCard({
 
   const trimmedContent = description.slice(0, 63) + (description.length > 70 ? '...' : '');
 
+
   return (
     <Link href={`/projects/${slug}`}>
       <Card className="relative border dark:bg-neutral-800 border-neutral-200 dark:border-neutral-800 lg:hover:scale-[102%]">
@@ -45,11 +46,13 @@ export default function ProjectCard({
 
           <div className="flex flex-wrap items-center gap-2">
             {type?.map((type, index) => (
-              <Badge className={`bg-${type.color}-200 text-neutral-700 dark:text-neutral-900 hover:bg-${type.color}/800`} key={index}>
+              <Badge className={`bg-${type.color}-200 text-neutral-700 dark:text-neutral-900 hover:bg-${type.color}-800`} key={index}>
                 {type.name}
               </Badge>
             ))}
           </div>
+
+
 
           <div className="flex mt-2 flex-wrap items-center gap-3">
             {stack?.map((stack, index) => (
