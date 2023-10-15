@@ -19,7 +19,6 @@ function Profile() {
   const imageSize = isMobile ? 40 : 100;
 
   useEffect(() => {
-    console.log(isOpen)
     if (isOpen) {
       document.body.style.overflow = 'hidden';
     } else {

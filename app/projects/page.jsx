@@ -11,7 +11,6 @@ const PAGE_DESCRIPTION = "Several projects that I have worked on, both private &
 export default async function page() {
   const pages = await getPages()
 
-
   return (
     <>
       <Container data-aos="fade-up">
