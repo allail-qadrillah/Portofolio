@@ -18,7 +18,7 @@ export default async function ProjectDetailPage({ params }) {
       <Container>
         <BackButton />
         <PageHeading title={content.title} description={content.description}/>
-        <ProjectDetail content={...content} />
+        <ProjectDetail content={content} />
       </Container>
     </>
   )
