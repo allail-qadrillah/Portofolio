@@ -33,7 +33,7 @@ function Profile() {
   return (
     <div
       className={clsx(
-        'z-20 fixed shadow-sm xl:shadow-none lg:border-none dark:border-b dark:border-neutral-800 dark:bg-dark lg:!bg-transparent w-full p-5 lg:relative lg:p-0',
+        'z-20 fixed shadow-sm bg-white xl:shadow-none lg:border-none dark:border-b dark:border-neutral-800 dark:bg-dark lg:!bg-transparent w-full p-5 lg:relative lg:p-0',
         isOpen && 'pb-0'
       )}
     >
@@ -52,7 +52,8 @@ function Profile() {
               isOpen && '!items-end flex-col-reverse justify-between h-[120px] pb-1'
             )}
           >
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
+            <span></span>
             <MobileMenuButton expandMenu={isOpen} setExpandMenu={toggleMenu}/>
           </div>
         )}
