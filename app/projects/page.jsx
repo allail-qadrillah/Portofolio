@@ -5,7 +5,7 @@ import Projects from "@/modules/projects"
 import { getPages } from "@/lib/notion_projects"
 
 const PAGE_TITLE = "Project"
-const PAGE_DESCRIPTION = "Several projects that I have worked on, both private & open source for Showcasing my passion for technology and problem-solving through code."
+const PAGE_DESCRIPTION = "Several projects that I have worked on, both private & open source for showcasing my passion on technology and problem-solving through code."
 
 
 export default async function page() {

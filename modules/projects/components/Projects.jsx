@@ -27,7 +27,6 @@ export default function Projects({ project_item }) {
   const [Projects, setProjects] = useState([])
   const Stacks = [...new Set(project_item.flatMap(project => project.stack))]
 
-  // setProject(project_item)
   useEffect(() => {
     // get stack from project
     if (value === "") {
@@ -38,9 +37,6 @@ export default function Projects({ project_item }) {
       )
     }
 
-    return () => {
-      // second
-    }
   }, [value])
 
   return (
@@ -87,6 +83,7 @@ export default function Projects({ project_item }) {
             </Command>
           </PopoverContent>
         </Popover>
+        <p className="text-sm text-muted-foreground">Total {Projects.length} Projects</p>
       </div>
 
       <section className="grid sm:grid-cols-2 gap-5 pt-2">

@@ -37,10 +37,10 @@ export default function ProjectCard({
         />
 
         <div className="p-5">
-          <div className="text-2xl font-bold text-neutral-700 dark:text-neutral-300 lg:hover:text-teal-800 dark:hover:text-teal-400 transition-all duration-300">
+          <div className="text-2xl text-neutral-700 dark:text-neutral-300 lg:hover:text-teal-800 dark:hover:text-teal-400 transition-all duration-300">
             {title}
           </div>
-          <p className="text-sm mb-2 text-neutral-700 dark:text-neutral-400 text-[15px] leading-relaxed">
+          <p className="text-lg mb-2 text-neutral-700 dark:text-neutral-400 text-[15px] leading-relaxed">
             {trimmedContent}
           </p>
 
@@ -52,9 +52,7 @@ export default function ProjectCard({
             ))}
           </div>
 
-
-
-          <div className="flex mt-2 flex-wrap items-center gap-3">
+          <div className="flex mt-2 mb-2 flex-wrap items-center gap-3">
             {stack?.map((stack, index) => (
               <div key={index} className="w-6">
                 <ToolTips title={stack}>{STACKS[stack]}</ToolTips>
@@ -63,9 +61,9 @@ export default function ProjectCard({
           </div>
 
           {is_public ? (
-            <Badge className="gap-2 "> <Github /> Public </Badge>
+            <Badge variant="secondary" className="gap-2 "> <Github /> Public </Badge>
           ) : (
-            <Badge className="gap-2 "> <Github /> Private </Badge>
+            <Badge variant="secondary" className="gap-2 "> <Github /> Private </Badge>
           )}
         </div>
       </Card>
