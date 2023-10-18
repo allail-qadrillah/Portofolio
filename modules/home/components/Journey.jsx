@@ -14,7 +14,7 @@ export default function Journey() {
     <div className="space-y-2">
       <SectionHeading title='Journey' icon={<CareerIcon className='mr-1' />} />
       <SectionSubHeading>
-        <p className="dark:text-neutral-400">My Journey</p>
+        <p className="dark:text-neutral-400"></p>
         <Link
           href={CV_URL}
           target="_blank"

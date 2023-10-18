@@ -16,11 +16,13 @@ export function CardWorkTogether({ className }) {
           <RocketIcon size={24} />
           <CardTitle>Lets work together!</CardTitle>
         </div>
-        <CardDescription className="text-lg dark:text-neutral-300"> I&apos;m open for Fulltime Job and freelance projects, feel free to email me to see how
-          can we collaborate.</CardDescription>
+        <CardDescription className="lg:text-lg text-base text-justify dark:text-neutral-300">
+          I&apos;m open for fulltime job and freelance projects.
+          feel free to email me and see how can we collaborate 🤟
+        </CardDescription>
       </CardHeader>
       <CardFooter>
-        <ButtonAsChild href="/contact">Contact me</ButtonAsChild>
+        <ButtonAsChild href="mailto:qadrillahengineering@gmail.com" target="_blank">Contact me</ButtonAsChild>
       </CardFooter>
     </Card>
 

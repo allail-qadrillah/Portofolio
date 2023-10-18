@@ -1,9 +1,11 @@
-import clsx from 'clsx';
 import Image from '@/components/elements/Image';
 import { PROFILE_URL, LINKTREE_URL } from '@/constant';
-import Link from 'next/link';
 import { MdVerified as VerifiedIcon } from 'react-icons/md';
 import ToolTips from '@/components/elements/Tooltip';
+import Status from '@/components/elements/Status';
+import Link from 'next/link';
+
+import clsx from 'clsx';
 function ProfileHeader({ expandMenu, imageSize }) {
   return (
     <div
@@ -28,6 +30,11 @@ function ProfileHeader({ expandMenu, imageSize }) {
         <ToolTips title="Verified">
           <VerifiedIcon size={20} className='text-blue-400' />
         </ToolTips>
+
+      </div>
+      
+      <div>
+        {expandMenu && (<Status />)}
       </div>
 
       <Link
