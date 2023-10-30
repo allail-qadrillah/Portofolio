@@ -83,7 +83,7 @@ export default function Projects({ project_item }) {
             </Command>
           </PopoverContent>
         </Popover>
-        <p className="text-sm text-muted-foreground">Total {Projects.length} Projects</p>
+        {/* <p className="text-sm text-muted-foreground">Total {Projects.length} Projects</p> */}
       </div>
 
       <section className="grid sm:grid-cols-2 gap-5 pt-2">
