@@ -6,7 +6,7 @@ export default function Introduction() {
     <section className="bg-cover bg-no-repeat space-y-2">
       <div className="flex justify-between items-center">
         <div className="flex gap-2 font-bold text-4xl">
-          <h1> Hi There, I&apos;m Alil</h1>
+          <h1> Hi, I&apos;m Alil</h1>
           <div className="ml-1 animate-waving-hand">👋</div>
         </div>
         <Link href="/" target="_blank" aria-label="buy-me-cofey">
