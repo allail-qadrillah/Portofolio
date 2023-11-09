@@ -25,7 +25,6 @@ export default function Projects({ project_item }) {
   const [open, setOpen] = useState(false)
   const [value, setValue] = useState("")
   const [Projects, setProjects] = useState([])
-  console.log(project_item)
   const Stacks = [...new Set(project_item.flatMap(project => project.stack))]
 
   useEffect(() => {

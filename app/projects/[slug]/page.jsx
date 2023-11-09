@@ -9,6 +9,7 @@ import { SkeletonContent } from "@/components/elements/Skeleton"
 import ProjectDetail from "@/modules/projects/components/ProjectDetail";
 import { notFound } from "next/navigation"
 import { useEffect, useState } from "react"
+import { motion } from "framer-motion"
 
 export default function ProjectDetailPage({ params }) {
   const [content, setContent] = useState()
@@ -45,8 +46,14 @@ export default function ProjectDetailPage({ params }) {
           <SkeletonContent />
         ) : (
           <div>
-            <PageHeading title={content.title} description={content.description} />
-            <ProjectDetail content={content} />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <PageHeading title={content.title} description={content.description} />
+              <ProjectDetail content={content} />
+            </motion.div>)
           </div>
         )}
 
