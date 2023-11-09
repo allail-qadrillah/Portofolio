@@ -2,6 +2,7 @@
 
 import PageHeading from "@/components/elements/PageHeading"
 import Container from "@/components/elements/Container"
+import { SkeletonCard } from "@/components/elements/Skeleton"
 import Projects from "@/modules/projects"
 
 import { useEffect, useState } from "react"
@@ -31,7 +32,7 @@ export default function Page() {
       <Container data-aos="fade-up">
         <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
         {isLoading ? (
-          <p>loading</p>
+          <SkeletonCard />
         ) : (
           <Projects project_item={pages} />
         )}

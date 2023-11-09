@@ -3,6 +3,8 @@
 import PageHeading from "@/components/elements/PageHeading"
 import BackButton from "@/components/elements/BackButton"
 import Container from "@/components/elements/Container"
+import { SkeletonContent } from "@/components/elements/Skeleton"
+
 
 import ProjectDetail from "@/modules/projects/components/ProjectDetail";
 import { notFound } from "next/navigation"
@@ -18,7 +20,7 @@ export default function ProjectDetailPage({ params }) {
     const fetchContent = async () => {
 
       const response = await fetch(`/api/notion/${params.slug}`)
-      console.log(response)
+
       if (response.status === 200) {
         const data = await response.json()
         setContent(data)
@@ -39,14 +41,14 @@ export default function ProjectDetailPage({ params }) {
       <Container>
         <BackButton />
 
-        {isLoading ? (
-          <p>loading</p>
+        <SkeletonContent />
+        {/* {isLoading ? (
         ) : (
           <div>
             <PageHeading title={content.title} description={content.description} />
             <ProjectDetail content={content} />
           </div>
-        )}
+        )} */}
 
       </Container>
     </>
