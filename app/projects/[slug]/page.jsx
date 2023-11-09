@@ -41,14 +41,14 @@ export default function ProjectDetailPage({ params }) {
       <Container>
         <BackButton />
 
-        <SkeletonContent />
-        {/* {isLoading ? (
+        {isLoading ? (
+          <SkeletonContent />
         ) : (
           <div>
             <PageHeading title={content.title} description={content.description} />
             <ProjectDetail content={content} />
           </div>
-        )} */}
+        )}
 
       </Container>
     </>
