@@ -53,7 +53,7 @@ export default function ProjectDetailPage({ params }) {
             >
               <PageHeading title={content.title} description={content.description} />
               <ProjectDetail content={content} />
-            </motion.div>)
+            </motion.div>
           </div>
         )}
 

@@ -96,7 +96,8 @@ export default function Projects({ project_item }) {
               transition={{ duration: 0.3, delay: index * 0.3 }}
             >
               <ProjectCard {...project} />
-            </motion.div>)
+            </motion.div>
+            )
         })}
       </section>
     </>

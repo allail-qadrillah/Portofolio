@@ -6,6 +6,8 @@ import { SkeletonCard } from "@/components/elements/Skeleton"
 import Projects from "@/modules/projects"
 
 import { useEffect, useState } from "react"
+import { motion } from "framer-motion"
+
 
 const PAGE_TITLE = "Project"
 const PAGE_DESCRIPTION = "Several projects that I have worked on, both private & open source for showcasing my passion on technology and problem-solving through code."
@@ -34,7 +36,13 @@ export default function Page() {
         {isLoading ? (
           <SkeletonCard />
         ) : (
-          <Projects project_item={pages} />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Projects project_item={pages} />
+          </motion.div>
         )}
       </Container>
     </>
