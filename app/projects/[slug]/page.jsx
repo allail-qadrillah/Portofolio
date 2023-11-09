@@ -1,24 +1,53 @@
+'use client'
 
 import PageHeading from "@/components/elements/PageHeading"
 import BackButton from "@/components/elements/BackButton"
 import Container from "@/components/elements/Container"
-import { getPageBySlug, getPageContent } from "@/lib/notion_projects"
 
 import ProjectDetail from "@/modules/projects/components/ProjectDetail";
 import { notFound } from "next/navigation"
+import { useEffect, useState } from "react"
 
-export default async function ProjectDetailPage({ params }) {
-  const page = await getPageBySlug(params.slug)
-  if (!page) notFound()
+export default function ProjectDetailPage({ params }) {
+  const [content, setContent] = useState()
+  const [isLoading, setIsLoading] = useState(true)
+  const [isNotfound, setNotfound] = useState(false)
 
-  const content = await getPageContent(page.id)
+  useEffect(() => {
+
+    const fetchContent = async () => {
+
+      const response = await fetch(`/api/notion/${params.slug}`)
+      console.log(response)
+      if (response.status === 200) {
+        const data = await response.json()
+        setContent(data)
+        setIsLoading(false)
+
+      } else if (response.status === 404) {
+        setNotfound(true)
+      }
+    }
+    fetchContent()
+
+  }, [])
+
+  if (isNotfound) notFound()
 
   return (
     <>
       <Container>
         <BackButton />
-        <PageHeading title={content.title} description={content.description}/>
-        <ProjectDetail content={content} />
+
+        {isLoading ? (
+          <p>loading</p>
+        ) : (
+          <div>
+            <PageHeading title={content.title} description={content.description} />
+            <ProjectDetail content={content} />
+          </div>
+        )}
+
       </Container>
     </>
   )
