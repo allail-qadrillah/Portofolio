@@ -50,7 +50,7 @@ export const MENU_ITEMS = [
     title: 'Blog',
     href: '/blog',
     icon: <BlogIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: false,
     eventName: 'Pages: Blog'
   },
@@ -58,7 +58,7 @@ export const MENU_ITEMS = [
     title: 'Learn',
     href: '/learn',
     icon: <LearnIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: false,
     eventName: 'Pages: Learn'
   },
@@ -82,7 +82,7 @@ export const MENU_ITEMS = [
     title: 'Dashboard',
     href: '/dashboard',
     icon: <DashboardIcon size={iconSize} />,
-    isShow: true,
+    isShow: false,
     isExternal: false,
     eventName: 'Pages: Dashboard'
   }
