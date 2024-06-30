@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 
 
 const PAGE_TITLE = "Project"
-const PAGE_DESCRIPTION = "Several projects that I have worked on, both private & open source for showcasing my passion on technology and problem-solving through code."
+const PAGE_DESCRIPTION = "Several projects that I have worked on, for showcasing my skils."
 
 export default function Page() {
   const [pages, setPages] = useState()
