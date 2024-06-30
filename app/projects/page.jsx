@@ -9,8 +9,8 @@ import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
 
-const PAGE_TITLE = "Project"
-const PAGE_DESCRIPTION = "Several projects that I have worked on, for showcasing my skils."
+const PAGE_TITLE = "Project's"
+const PAGE_DESCRIPTION = "Several projects that I have worked on for showcasing my skils."
 
 export default function Page() {
   const [pages, setPages] = useState()

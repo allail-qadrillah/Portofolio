@@ -32,14 +32,16 @@ export default function ProjectDetail({ content }) {
         ))}
       </div>
 
-      <Image
-        src={content.image}
-        alt={content.title}
-        width={800}
-        height={400}
-        rounded="rounded"
-        className="lg:hover:scale-105"
-      />
+      {content.image &&
+        <Image
+          src={content.image}
+          alt={content.title}
+          width={800}
+          height={400}
+          rounded="rounded"
+          className="lg:hover:scale-105"
+        />
+      }
 
       <NotionPage recordMap={content.record_map} />
     </div>
