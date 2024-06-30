@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge"
 export default function ProjectDetail({ content }) {
   return (
     <div className="space-y-4">
-      <div className="flex flex-col lg:flex-row sm:flex-row items-start lg:items-center  gap-5 justify-between">
+      {/* <div className="flex flex-col lg:flex-row sm:flex-row items-start lg:items-center  gap-5 justify-between">
         <div className="flex items-center flex-wrap gap-2">
           <span className="text-[15px] mb-1 text-neutral-700 dark:text-neutral-300">Tech Stack :</span>
           <div className="flex flex-wrap items-center gap-3">
@@ -30,7 +30,7 @@ export default function ProjectDetail({ content }) {
             {type.value}
           </Badge>
         ))}
-      </div>
+      </div> */}
 
       {content.image &&
         <Image

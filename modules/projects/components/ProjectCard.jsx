@@ -23,7 +23,6 @@ export function ProjectCard2({
   title, slug, description, image, stack, type, is_featured, is_public
 }) {
   // const trimmedContent = description.slice(0, 63) + (description.length > 70 ? '...' : '');
-  console.log(title, slug, description, image, stack, type, is_featured, is_public)
   return (
     <div>
       <Card key={title} className='flex flex-col border shadow w-full'>
