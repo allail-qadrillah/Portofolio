@@ -10,7 +10,7 @@ export default function Introduction() {
           <div className="ml-1 animate-waving-hand">👋</div>
         </div>
         <Link href="/" target="_blank" aria-label="buy-me-cofey">
-          <TbCoffee size={25} />
+          {/* <TbCoffee size={25} /> */}
         </Link>
       </div>
       <div className="mt-2 space-y-4">

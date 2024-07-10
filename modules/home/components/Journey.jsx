@@ -21,8 +21,8 @@ export default function Journey() {
           passHref
           className="flex gap-2 items-center hover:gap-3 duration-300 text-neutral-600 dark:text-neutral-500 hover:text-neutral-700 hover:dark:text-neutral-300"
         >
-          <DownloadIcon/>
-          <span>Download Resume</span>
+          {/* <DownloadIcon/> */}
+          {/* <span>Download Resume</span> */}
         </Link>
       </SectionSubHeading>
 

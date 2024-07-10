@@ -1,6 +1,6 @@
 export const TimeLineData = [
   {
-    year: 2023,
+    year: "2023 - now",
     title: "Deep Dive into AI",
     description: "learn more about Artificial Intelligence especially in the field of computer vision and currently working on a thesis on the topic of Transformers Architecture"
   },
