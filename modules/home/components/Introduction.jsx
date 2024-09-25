@@ -22,7 +22,7 @@ export default function Introduction() {
           <a className="underline decoration-wavy underline-offset-4 decoration-2 decoration-indigo-500">
             passionate about AI especially on Computer Vision
           </a> and <a className="underline decoration-wavy underline-offset-4 decoration-2  decoration-pink-500">
-            experienced Software Engineering with a strong focus on Backend development.</a> Proficient in <a className="underline decoration-solid decoration-blue-400 decoration-2">
+            experienced Software Engineering with a strong focus on Frontend development.</a> Proficient in <a className="underline decoration-solid decoration-blue-400 decoration-2">
             Python</a> and <a className="underline decoration-solid decoration-orange-400 decoration-2">
             JavaScript</a>. Collaborative team player dedicated to delivering efficient Software and intelligent AI.
         </p>
